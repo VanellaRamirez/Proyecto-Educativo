@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicología Integral | Salud Integral</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header class="hero" id="inicio">
+        <nav class="nav">
+            <a class="logo" href="#inicio">♡ Salud Integral</a>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#bienestar">Bienestar emocional</a>
+                <a href="#orientacion">Solicitar orientación</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <p class="eyebrow">TU BIENESTAR TAMBIÉN IMPORTA</p>
+            <h1>Un espacio para<br>
+                <span>sentirte escuchado.</span>
+            </h1>
+
+            <p>
+                La salud mental forma parte de nuestra salud integral.
+                Conoce nuestros servicios de psicología y encuentra
+                información para dar el primer paso.
+            </p>
+
+            <a class="button" href="#orientacion">
+                Conocer cómo solicitar orientación
+            </a>
+
+            <p class="note">
+                Esta información es general y no sustituye una consulta profesional.
+            </p>
+        </div>
+
+        <div class="hero-decoration" aria-hidden="true">♡</div>
+    </header>
+
+    <main>
+        <section class="intro section">
+            <div class="section-icon">✿</div>
+            <p class="eyebrow">PSICOLOGÍA PARA TODOS</p>
+            <h2>Cuidar de ti también es importante</h2>
+
+            <p class="center-text">
+                A veces necesitamos hablar, comprender lo que sentimos
+                o aprender nuevas formas de afrontar los retos cotidianos.
+                Pedir apoyo psicológico puede ser un paso positivo para
+                nuestro bienestar.
+            </p>
+        </section>
+
+        <section class="section soft" id="servicios">
+            <div class="section-heading">
+                <p class="eyebrow">¿CÓMO PODEMOS ORIENTARTE?</p>
+                <h2>Servicios de psicología</h2>
+                <p>
+                    Conoce algunas áreas generales de atención.
+                    La disponibilidad debe confirmarse directamente con la clínica.
+                </p>
+            </div>
+
+            <div class="cards">
+                <article class="service-card">
+                    <div class="card-icon">☁</div>
+                    <h3>Orientación emocional</h3>
+                    <p>
+                        Un espacio para hablar de emociones, preocupaciones
+                        y situaciones que afectan el bienestar diario.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-icon">♡</div>
+                    <h3>Manejo del estrés</h3>
+                    <p>
+                        Información y estrategias generales para reconocer
+                        el estrés y desarrollar hábitos de autocuidado.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-icon">✦</div>
+                    <h3>Autoestima y crecimiento</h3>
+                    <p>
+                        Reflexiona sobre tus fortalezas personales,
+                        tus límites y tus relaciones saludables.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-icon">☼</div>
+                    <h3>Orientación familiar</h3>
+                    <p>
+                        Información sobre comunicación, convivencia
+                        y formas respetuosas de resolver desacuerdos.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section wellbeing" id="bienestar">
+            <div class="wellbeing-text">
+                <p class="eyebrow">PEQUEÑOS PASOS</p>
+                <h2>Hábitos que apoyan tu bienestar</h2>
+
+                <p>
+                    Estas ideas pueden ayudar a cuidar tu bienestar cotidiano,
+                    aunque no reemplazan la ayuda profesional cuando la necesitas.
+                </p>
+
+                <ul class="check-list">
+                    <li>Procura mantener horarios de sueño y descanso.</li>
+                    <li>Habla con alguien de confianza sobre cómo te sientes.</li>
+                    <li>Tómate pausas y realiza actividades que disfrutes.</li>
+                    <li>Busca ayuda profesional si algo te preocupa constantemente.</li>
+                </ul>
+            </div>
+
+            <aside class="quote-card">
+                <span class="quote-mark">“</span>
+                <p>
+                    No tienes que tener todas las respuestas para comenzar
+                    a cuidar de ti.
+                </p>
+                <span class="quote-heart">♡</span>
+            </aside>
+        </section>
+
+        <section class="section soft" id="orientacion">
+            <div class="section-heading">
+                <p class="eyebrow">PRIMER CONTACTO</p>
+                <h2>Solicita información</h2>
+                <p>
+                    Completa el formulario para preparar un mensaje de solicitud.
+                    Este prototipo no envía los datos directamente a la clínica.
+                </p>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input id="correo" name="correo" type="email" placeholder="nombre@ejemplo.com" required>
+
+                <label for="motivo">¿Sobre qué deseas recibir información?</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Selecciona una opción</option>
+                    <option>Orientación emocional</option>
+                    <option>Manejo del estrés</option>
+                    <option>Autoestima y crecimiento personal</option>
+                    <option>Orientación familiar</option>
+                    <option>Información general y disponibilidad</option>
+                </select>
+
+                <label for="mensaje">Mensaje breve (opcional)</label>
+                <textarea id="mensaje" name="mensaje" rows="4"
+                    placeholder="Escribe tu duda general. Evita incluir información privada."></textarea>
+
+                <button class="button" type="submit">
+                    Preparar solicitud
+                </button>
+
+                <p id="formMessage" class="form-message" role="status"></p>
+            </form>
+
+            <p class="privacy">
+                Este prototipo no guarda información. Antes de usarlo como
+                servicio real, la clínica debe configurar un canal seguro
+                y explicar cómo manejará los datos personales.
+            </p>
+        </section>
+
+        <section class="section emergency">
+            <h2>¿Necesitas ayuda inmediata?</h2>
+            <p>
+                Si tú u otra persona están en peligro inmediato, contacta
+                a los servicios de emergencia de tu localidad o busca a una
+                persona de confianza que pueda acompañarte.
+                Esta página no es un servicio de emergencia.
+            </p>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="footer-brand">♡ Salud Integral</div>
+        <p>Psicología Integral · Información y orientación</p>
+        <p class="footer-small">
+            Proyecto escolar de programación. Los servicios, horarios y
+            datos de contacto deben ser confirmados por la clínica.
+        </p>
+        <a href="#inicio" class="back-top">Volver al inicio ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
