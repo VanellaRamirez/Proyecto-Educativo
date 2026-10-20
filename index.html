@@ -4,209 +4,462 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psicología Integral | Salud Integral</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Abarrotes La Esquina</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5ed;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #d62d2d;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: #d6314a;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #c6770f;
+        }
+
+        section {
+            padding: 35px 8%;
+        }
+
+        h2 {
+            color: #8b3828;
+            margin-bottom: 20px;
+        }
+
+        .presentacion {
+            text-align: center;
+            background: #e3eddf;
+            padding: 45px 20px;
+        }
+
+        .presentacion p {
+            margin-bottom: 10px;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .producto {
+            background: rgb(236, 127, 127);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 3px 8px #0001;
+        }
+
+        .emoji {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .producto h3 {
+            margin-bottom: 10px;
+        }
+
+        .precio {
+            color: #245b45;
+            font-weight: bold;
+            margin: 12px;
+            font-size: 20px;
+        }
+
+        button {
+            background: #245b45;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+
+        button:hover {
+            background: #183e30;
+        }
+
+        .informacion {
+            background: white;
+            border-radius: 10px;
+            padding: 22px;
+            box-shadow: 0 3px 8px #0001;
+        }
+
+        .informacion p {
+            margin-bottom: 12px;
+        }
+
+        .informacion a {
+            color: #a30453;
+        }
+
+        #lista-carrito {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        #lista-carrito li {
+            margin-bottom: 8px;
+        }
+
+        .entrevista-pregunta {
+            color: #b31b69;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background: #183e30;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            section {
+                padding: 25px 5%;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <header class="hero" id="inicio">
-        <nav class="nav">
-            <a class="logo" href="#inicio">♡ Salud Integral</a>
-
-            <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
-
-            <div class="nav-links" id="navLinks">
-                <a href="#inicio">Inicio</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#bienestar">Bienestar emocional</a>
-                <a href="#orientacion">Solicitar orientación</a>
-                <a href="#contacto">Contacto</a>
-            </div>
-        </nav>
-
-        <div class="hero-content">
-            <p class="eyebrow">TU BIENESTAR TAMBIÉN IMPORTA</p>
-            <h1>Un espacio para<br>
-                <span>sentirte escuchado.</span>
-            </h1>
-
-            <p>
-                La salud mental forma parte de nuestra salud integral.
-                Conoce nuestros servicios de psicología y encuentra
-                información para dar el primer paso.
-            </p>
-
-            <a class="button" href="#orientacion">
-                Conocer cómo solicitar orientación
-            </a>
-
-            <p class="note">
-                Esta información es general y no sustituye una consulta profesional.
-            </p>
-        </div>
-
-        <div class="hero-decoration" aria-hidden="true">♡</div>
+    <header>
+        <h1> Abarrotes La Esquina</h1>
+        <p>¡Todo lo que necesitas, cerca de ti!</p>
+        <p>Horario: 7:00 a. m. a 10:30 p. m.</p>
     </header>
 
-    <main>
-        <section class="intro section">
-            <div class="section-icon">✿</div>
-            <p class="eyebrow">PSICOLOGÍA PARA TODOS</p>
-            <h2>Cuidar de ti también es importante</h2>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#carrito">Carrito</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#entrevista">Entrevista</a>
+    </nav>
 
-            <p class="center-text">
-                A veces necesitamos hablar, comprender lo que sentimos
-                o aprender nuevas formas de afrontar los retos cotidianos.
-                Pedir apoyo psicológico puede ser un paso positivo para
-                nuestro bienestar.
-            </p>
-        </section>
+    <section id="inicio" class="presentacion">
+        <h2>¡Bienvenidos a nuestra tienda!</h2>
 
-        <section class="section soft" id="servicios">
-            <div class="section-heading">
-                <p class="eyebrow">¿CÓMO PODEMOS ORIENTARTE?</p>
-                <h2>Servicios de psicología</h2>
-                <p>
-                    Conoce algunas áreas generales de atención.
-                    La disponibilidad debe confirmarse directamente con la clínica.
-                </p>
-            </div>
-
-            <div class="cards">
-                <article class="service-card">
-                    <div class="card-icon">☁</div>
-                    <h3>Orientación emocional</h3>
-                    <p>
-                        Un espacio para hablar de emociones, preocupaciones
-                        y situaciones que afectan el bienestar diario.
-                    </p>
-                </article>
-
-                <article class="service-card">
-                    <div class="card-icon">♡</div>
-                    <h3>Manejo del estrés</h3>
-                    <p>
-                        Información y estrategias generales para reconocer
-                        el estrés y desarrollar hábitos de autocuidado.
-                    </p>
-                </article>
-
-                <article class="service-card">
-                    <div class="card-icon">✦</div>
-                    <h3>Autoestima y crecimiento</h3>
-                    <p>
-                        Reflexiona sobre tus fortalezas personales,
-                        tus límites y tus relaciones saludables.
-                    </p>
-                </article>
-
-                <article class="service-card">
-                    <div class="card-icon">☼</div>
-                    <h3>Orientación familiar</h3>
-                    <p>
-                        Información sobre comunicación, convivencia
-                        y formas respetuosas de resolver desacuerdos.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <section class="section wellbeing" id="bienestar">
-            <div class="wellbeing-text">
-                <p class="eyebrow">PEQUEÑOS PASOS</p>
-                <h2>Hábitos que apoyan tu bienestar</h2>
-
-                <p>
-                    Estas ideas pueden ayudar a cuidar tu bienestar cotidiano,
-                    aunque no reemplazan la ayuda profesional cuando la necesitas.
-                </p>
-
-                <ul class="check-list">
-                    <li>Procura mantener horarios de sueño y descanso.</li>
-                    <li>Habla con alguien de confianza sobre cómo te sientes.</li>
-                    <li>Tómate pausas y realiza actividades que disfrutes.</li>
-                    <li>Busca ayuda profesional si algo te preocupa constantemente.</li>
-                </ul>
-            </div>
-
-            <aside class="quote-card">
-                <span class="quote-mark">“</span>
-                <p>
-                    No tienes que tener todas las respuestas para comenzar
-                    a cuidar de ti.
-                </p>
-                <span class="quote-heart">♡</span>
-            </aside>
-        </section>
-
-        <section class="section soft" id="orientacion">
-            <div class="section-heading">
-                <p class="eyebrow">PRIMER CONTACTO</p>
-                <h2>Solicita información</h2>
-                <p>
-                    Completa el formulario para preparar un mensaje de solicitud.
-                    Este prototipo no envía los datos directamente a la clínica.
-                </p>
-            </div>
-
-            <form id="contactForm" class="contact-form">
-                <label for="nombre">Nombre</label>
-                <input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre" required>
-
-                <label for="correo">Correo electrónico</label>
-                <input id="correo" name="correo" type="email" placeholder="nombre@ejemplo.com" required>
-
-                <label for="motivo">¿Sobre qué deseas recibir información?</label>
-                <select id="motivo" name="motivo" required>
-                    <option value="">Selecciona una opción</option>
-                    <option>Orientación emocional</option>
-                    <option>Manejo del estrés</option>
-                    <option>Autoestima y crecimiento personal</option>
-                    <option>Orientación familiar</option>
-                    <option>Información general y disponibilidad</option>
-                </select>
-
-                <label for="mensaje">Mensaje breve (opcional)</label>
-                <textarea id="mensaje" name="mensaje" rows="4"
-                    placeholder="Escribe tu duda general. Evita incluir información privada."></textarea>
-
-                <button class="button" type="submit">
-                    Preparar solicitud
-                </button>
-
-                <p id="formMessage" class="form-message" role="status"></p>
-            </form>
-
-            <p class="privacy">
-                Este prototipo no guarda información. Antes de usarlo como
-                servicio real, la clínica debe configurar un canal seguro
-                y explicar cómo manejará los datos personales.
-            </p>
-        </section>
-
-        <section class="section emergency">
-            <h2>¿Necesitas ayuda inmediata?</h2>
-            <p>
-                Si tú u otra persona están en peligro inmediato, contacta
-                a los servicios de emergencia de tu localidad o busca a una
-                persona de confianza que pueda acompañarte.
-                Esta página no es un servicio de emergencia.
-            </p>
-        </section>
-    </main>
-
-    <footer id="contacto">
-        <div class="footer-brand">♡ Salud Integral</div>
-        <p>Psicología Integral · Información y orientación</p>
-        <p class="footer-small">
-            Proyecto escolar de programación. Los servicios, horarios y
-            datos de contacto deben ser confirmados por la clínica.
+        <p>
+            Somos una tienda de abarrotes tradicional donde encontrarás
+            productos básicos para tu hogar a precios accesibles.
         </p>
-        <a href="#inicio" class="back-top">Volver al inicio ↑</a>
+
+        <p>
+            Nos gusta atender a nuestros clientes con amabilidad
+            y ofrecerles los productos que necesitan todos los días.
+        </p>
+
+        <p>
+            ¡Gracias por apoyar a los negocios de nuestra comunidad!
+        </p>
+    </section>
+
+    <section id="catalogo">
+        <h2> Catálogo de productos</h2>
+
+        <div class="productos">
+
+            <div class="producto">
+                <div class="emoji">🥛</div>
+                <h3>Leche</h3>
+                <p>Leche para toda la familia.</p>
+                <p class="precio">$28.00</p>
+                <button onclick="agregar('Leche', 28)">
+                    Agregar al carrito
+                </button>
+            </div>
+
+            <div class="producto">
+                <div class="emoji">🍚</div>
+                <h3>Arroz</h3>
+                <p>Arroz para tus comidas.</p>
+                <p class="precio">$22.00</p>
+                <button onclick="agregar('Arroz', 22)">
+                    Agregar al carrito
+                </button>
+            </div>
+
+            <div class="producto">
+                <div class="emoji">🫘</div>
+                <h3>Frijol</h3>
+                <p>Un alimento básico para el hogar.</p>
+                <p class="precio">$35.00</p>
+                <button onclick="agregar('Frijol', 35)">
+                    Agregar al carrito
+                </button>
+            </div>
+
+            <div class="producto">
+                <div class="emoji">🍪</div>
+                <h3>Galletas</h3>
+                <p>Un antojo para cualquier momento.</p>
+                <p class="precio">$18.00</p>
+                <button onclick="agregar('Galletas', 18)">
+                    Agregar al carrito
+                </button>
+            </div>
+
+            <div class="producto">
+                <div class="emoji">🥤</div>
+                <h3>Refresco</h3>
+                <p>Para acompañar tus comidas.</p>
+                <p class="precio">$20.00</p>
+                <button onclick="agregar('Refresco', 20)">
+                    Agregar al carrito
+                </button>
+            </div>
+
+            <div class="producto">
+                <div class="emoji">🧼</div>
+                <h3>Jabón</h3>
+                <p>Para la limpieza diaria.</p>
+                <p class="precio">$16.00</p>
+                <button onclick="agregar('Jabón', 16)">
+                    Agregar al carrito
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="carrito">
+        <h2> Carrito de compras</h2>
+
+        <div class="informacion">
+            <ul id="lista-carrito">
+                <li>Tu carrito está vacío.</li>
+            </ul>
+
+            <h3 id="total">Total: $0.00</h3>
+
+            <button onclick="vaciarCarrito()">
+                Vaciar carrito
+            </button>
+
+            <p style="margin-top: 15px;">
+                Este carrito es una demostración escolar.
+                No procesa pagos ni pedidos reales.
+            </p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>📞 Contacto y datos del negocio</h2>
+
+        <div class="informacion">
+            <p>
+                <strong>Nombre del negocio:</strong>
+                Abarrotes La Esquina
+            </p>
+
+            <p>
+                <strong>Nombre de la propietaria:</strong>
+                Josefina García Chávez
+            </p>
+
+            <p>
+                <strong>Domicilio:</strong>
+                Justo Sierra 26, Centro, Huescalapa
+            </p>
+
+            <p>
+                <strong>Teléfono:</strong>
+                <a href="tel:3413334589">341 33 34589</a>
+            </p>
+
+            <p>
+                <strong>Correo electrónico:</strong>
+                <a href="mailto:Josefagc3@gmail.com">
+                    Josefagc3@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Horario de atención:</strong>
+                7:00 a. m. a 10:30 p. m.
+            </p>
+
+            <p>
+                <strong>Atención:</strong>
+                Estamos para ayudarte con tus compras.
+            </p>
+        </div>
+    </section>
+
+    <section id="entrevista">
+        <h2>🎤 Conoce a nuestra propietaria</h2>
+
+        <div class="informacion">
+
+            <p>
+                <strong>Entrevistada:</strong>
+                Josefina García Chávez
+            </p>
+
+            <h3 class="entrevista-pregunta">
+                1. ¿Cómo surgió la idea de abrir esta tienda?
+            </h3>
+            <p>
+                Siempre había querido tener mi propio negocio y
+                también quería ayudar con los gastos de mi familia.
+                Poco a poco fui empezando con la tienda y aquí seguimos.
+            </p>
+
+            <h3 class="entrevista-pregunta">
+                2. ¿Cuánto tiempo lleva funcionando el negocio?
+            </h3>
+            <p>
+                Ya tenemos tiempo trabajando en la tienda.
+                Ha sido un esfuerzo de todos los días y me da gusto
+                poder seguir atendiendo a las personas de aquí.
+            </p>
+
+            <h3 class="entrevista-pregunta">
+                3. ¿Cuáles son los productos más vendidos?
+            </h3>
+            <p>
+                Se venden mucho los refrescos, las galletas, la leche,
+                el arroz y los frijoles. Son cosas que las personas
+                necesitan para su casa y vienen a comprar seguido.
+            </p>
+
+            <h3 class="entrevista-pregunta">
+                4. ¿Qué es lo que más le gusta de atender a sus clientes?
+            </h3>
+            <p>
+                Me gusta que los clientes se sientan a gusto cuando
+                vienen. Algunos ya nos conocen desde hace tiempo y
+                es bonito platicar con ellos y ayudarlos en lo que necesitan.
+            </p>
+
+            <h3 class="entrevista-pregunta">
+                5. ¿Qué recomienda a las personas que quieren iniciar un negocio?
+            </h3>
+            <p>
+                Que le echen ganas, que tengan paciencia y que traten
+                bien a sus clientes. Al principio puede ser difícil,
+                pero con trabajo y responsabilidad se puede salir adelante.
+            </p>
+
+            <p style="margin-top: 20px;">
+                <strong>Evidencia de la entrevista:</strong>
+                Agrega fotografías o un video de la entrevista realizada,
+                con autorización de la propietaria.
+            </p>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Abarrotes La Esquina</p>
+        <p>¡Gracias por apoyar a los negocios locales!</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        let carrito = [];
+
+        function agregar(nombre, precio) {
+            carrito.push({
+                nombre: nombre,
+                precio: precio
+            });
+
+            mostrarCarrito();
+        }
+
+        function mostrarCarrito() {
+            const lista = document.getElementById("lista-carrito");
+            const totalTexto = document.getElementById("total");
+
+            lista.innerHTML = "";
+            let total = 0;
+
+            if (carrito.length === 0) {
+                const elemento = document.createElement("li");
+                elemento.textContent = "Tu carrito está vacío.";
+                lista.appendChild(elemento);
+            }
+
+            carrito.forEach(function (producto, indice) {
+                const elemento = document.createElement("li");
+
+                elemento.appendChild(
+                    document.createTextNode(
+                        producto.nombre + " - $" +
+                        producto.precio.toFixed(2) + " "
+                    )
+                );
+
+                const boton = document.createElement("button");
+                boton.textContent = "Eliminar";
+
+                boton.onclick = function () {
+                    carrito.splice(indice, 1);
+                    mostrarCarrito();
+                };
+
+                elemento.appendChild(boton);
+                lista.appendChild(elemento);
+
+                total += producto.precio;
+            });
+
+            totalTexto.textContent =
+                "Total: $" + total.toFixed(2);
+        }
+
+        function vaciarCarrito() {
+            carrito = [];
+            mostrarCarrito();
+        }
+    </script>
+
 </body>
 
 </html>
